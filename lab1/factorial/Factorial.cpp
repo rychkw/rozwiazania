@@ -16,5 +16,5 @@ int factorial(int value) {
   else{
       return value*factorial(value-1);
   }
-    
+
 }
