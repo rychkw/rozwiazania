@@ -1,6 +1,3 @@
-//
-// Created by sylwia on 05.03.18.
-//
 #include "DoubleBasePalindromes.h"
 using namespace std;
 
