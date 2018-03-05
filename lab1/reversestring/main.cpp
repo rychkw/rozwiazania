@@ -1,6 +1,3 @@
-//
-// Created by sylwia on 05.03.18.
-//
 #include "ReverseString.h"
 using namespace std;
 
