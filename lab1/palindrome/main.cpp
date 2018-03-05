@@ -1,6 +1,3 @@
-//
-// Created by sylwia on 05.03.18.
-//
 #include <iostream>
 #include <string>
 #include "Palindrome.h"
