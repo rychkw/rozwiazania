@@ -1,7 +1,3 @@
-//
-// Created by sylwia on 05.03.18.
-//
-
 #include "ReverseString.h"
 
 std::string reverse(std::string str){
