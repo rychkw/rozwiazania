@@ -5,26 +5,16 @@
 
 
 
-#include "iostream"
-
-#include "stdio.h"
-
-#include "fstream"
-
-#include "map"
-
-#include "string"
-
-#include "cstdlib"
-
-#include "cctype"
-
-#include "vector"
-
-#include "stdint.h"
-
+#include <iostream>
+#include <cstdio>
+#include <fstream>
+#include <map>
+#include <string>
+#include <cstdlib>
+#include <cctype>
+#include <vector>
+#include <cstdint>
 #include <algorithm>
-
 
 
 using namespace std;

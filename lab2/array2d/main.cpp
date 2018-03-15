@@ -1,7 +1,3 @@
-//
-// Created by kwiasylw on 06.03.18.
-//
-
 #include "Array2D.h"
 using namespace std;
 

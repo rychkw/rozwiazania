@@ -5,5 +5,4 @@ int main()
     int k=4;
     cout<<GreatestProduct(v, k);
     return 0;
-
 }

@@ -7,18 +7,18 @@ int main (int argc,char* argv[])
     if (argv[1]){
         plik1=argv[1];
         fp2.open(plik1, ios::in);
-        if (fp2.good() == true){
+        if (fp2.good()){
             getline(fp2,message);
         }
 
     }else{
-        cout<<"nie mo¿na otworzyæ pliku do odczytu";
+        cout<<"nie mozna otworzyc pliku do odczytu";
         exit(1);
     }
     if (argv[2]){
         plik2=argv[2];
         fp.open(plik2, ios::out);
-        if (fp.good() == true ){
+        if (fp.good()){
             int czy=0;
             if (argv[3]){
                 czy = atoi(argv[3]);
@@ -39,7 +39,7 @@ int main (int argc,char* argv[])
             }
         }
     }else{
-        cout<<"nie mo¿na otworzyæ pliku do zapisu";
+        cout<<"nie mozna otworzyc pliku do zapisu";
         exit(1);
     }
 

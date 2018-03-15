@@ -1,6 +1,6 @@
 #include "Palindrome.h"
 
-bool is_palindrome(std::string str){
+bool IsPalindrome(std::string str){
     int counter=0;
     size_t length=str.length();
     for(int i=0; i<(length/2); i++){

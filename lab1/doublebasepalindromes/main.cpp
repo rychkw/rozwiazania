@@ -1,7 +1,6 @@
 #include "DoubleBasePalindromes.h"
 using namespace std;
 
-
 int main(){
     int max;
     cout << "Podaj max, w jakim szukac double-base-palindromow: " << endl;

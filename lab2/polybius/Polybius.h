@@ -4,13 +4,13 @@
 
 using namespace std;
 
-#include "iostream"
-#include "string"
-#include "cstdlib"
-#include "stdio.h"
-#include "fstream"
-#include "map"
-#include "cctype"
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <cstdio>
+#include <fstream>
+#include <map>
+#include <cctype>
 
 string PolybiusCrypt(string message);
 

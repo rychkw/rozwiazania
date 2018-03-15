@@ -5,6 +5,6 @@
 #include <string>
 using namespace std;
 
-bool is_palindrome(std::string str);
+bool IsPalindrome(std::string str);
 
 #endif //JIMP_EXERCISES_PALINDROME_H
