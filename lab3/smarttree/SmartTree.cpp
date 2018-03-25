@@ -92,7 +92,7 @@ namespace datastructures{
         nawiasy = 1;
 
         PartTree(nawiasy, tree, i);
-        
+
         tree_new -> right = RestoreTree(tree.substr(j,i-1));
 
         return tree_new;
