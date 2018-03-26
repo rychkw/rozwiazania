@@ -8,9 +8,9 @@ namespace nets {
     }
 
     string View::Render(const unordered_map <string, string> &model) const {
-        string pattern1 = pattern, rendered;
         regex regex1 {R"(\{\{\w+\}\})"};
         smatch matches;
+        string pattern1 = pattern, rendered;
 
         while (regex_search (pattern1, matches, regex1)) {
             for (auto match : matches) {
