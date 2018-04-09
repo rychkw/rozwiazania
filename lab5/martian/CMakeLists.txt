@@ -1,0 +1,7 @@
+project(martian)
+set(HEDEAR_FILES Marsjanin.h)
+set(SOURCE_FILES Marsjanin.cpp)
+add_library(libmartian STATIC ${SOURCE_FILES})
+target_include_directories(libmartian PUBLIC .)
+add_executable(martian ${SOURCE_FILES} main.cpp)
+target_link_libraries(martian libmartian)
