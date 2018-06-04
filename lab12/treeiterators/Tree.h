@@ -14,6 +14,7 @@ namespace tree{
         unique_ptr<Tree<T>> right;
         int size;
         int depth;
+        Tree* root;
 
         Tree();
         Tree(T value_);
@@ -22,6 +23,10 @@ namespace tree{
         void Insert(T val);
         int Size(){ return size; }
         auto Value(){ return value; }
+        Tree* Left(){ return left.get() ;}
+        Tree* Right(){ return right.get() ;}
+        Tree* Root(){ return root;}
+
     };
 
 
@@ -38,6 +43,7 @@ namespace tree{
     Tree<T>::Tree(T value_){
         size=1;
         depth=1;
+        root= this;
         this->value = value_;
         left = nullptr;
         right = nullptr;
@@ -96,3 +102,4 @@ namespace tree{
 
 
 #endif //JIMP_EXERCISES_TREE_H
+
