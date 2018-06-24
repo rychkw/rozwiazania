@@ -158,7 +158,6 @@ Matrix::Matrix(initializer_list<vector<complex<double>>> list) {
         colNumb = row.size();
         break;
     }
-
     rows = rowNumb;
     cols = int(colNumb);
 

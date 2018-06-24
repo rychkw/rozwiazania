@@ -1,8 +1,7 @@
 #include "GreatestProduct.h"
 
 
-int GreatestProduct(const vector<int> &v, int k)
-{
+int GreatestProduct(const vector<int> &v, int k) {
     vector<int> wektor=v;
     unsigned long len = wektor.size();
     sort(wektor.begin(),wektor.end());
@@ -39,8 +38,5 @@ int GreatestProduct(const vector<int> &v, int k)
             iloczynmm=iloczyn_l*wektor[len-2];
             return max(iloczynmm,iloczynp);
         }
-
     }
-
-    return 0;
 }

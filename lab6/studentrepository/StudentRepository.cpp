@@ -94,7 +94,7 @@ namespace academia {
         studentCount = 0;
         for(auto iter : list) {
             repository.emplace_back(iter);
-            studentCount ++;
+            studentCount++;
         }
     }
     
@@ -104,29 +104,21 @@ namespace academia {
     
     Student &StudentRepository::operator[](string id) {
         for (auto &iter : repository) {
-            if (id == iter.id) {
-                return  iter;
-            }
+            if (id == iter.id) return  iter;
         }
     }
     
     bool StudentRepository::operator==(StudentRepository another_repository) const{
         for(auto iter : repository) {
-            if(another_repository[iter.id] == iter){
-                return true;
-            }
+            if(another_repository[iter.id] == iter) return true;
         }
         return false;
     }
     
     
-    
-    
+
     bool operator==(int age, StudyYear studentY){
-        if(age == studentY.study_year){
-            return true;
-        }
-        return false;
+        return(age == studentY.study_year);
     }
     
     ostream &operator<<(ostream &s, const Student &v) {

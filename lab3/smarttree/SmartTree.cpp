@@ -4,27 +4,27 @@ namespace datastructures{
     unique_ptr <SmartTree> CreateLeaf(int value){
         unique_ptr <SmartTree> ptr = make_unique<SmartTree>();
         ptr -> value = value;
-        ptr -> left = NULL;
-        ptr -> right = NULL;
+        ptr -> left = nullptr;
+        ptr -> right = nullptr;
         return ptr;
     }
 
     unique_ptr <SmartTree> InsertLeftChild(unique_ptr <SmartTree> tree, unique_ptr <SmartTree> left_subtree){
-        if (tree -> left == NULL){
+        if (tree -> left == nullptr){
             tree -> left = move(left_subtree);
         }
         return tree;
     }
 
     unique_ptr <SmartTree> InsertRightChild(unique_ptr <SmartTree> tree, unique_ptr <SmartTree> right_subtree){
-        if (tree -> right == NULL){
+        if (tree -> right == nullptr){
             tree -> right = move(right_subtree);
         }
         return tree;
     }
 
     void PrintTreeInOrder(const unique_ptr<SmartTree> &unique_ptr, ostream *out){
-        if (unique_ptr == NULL){
+        if (unique_ptr == nullptr){
             return;
         }
         else {
@@ -38,7 +38,7 @@ namespace datastructures{
     {
         string text_result = "";
         text_result += "[" + to_string(tree->value) + " ";
-        if(tree -> left != NULL) {
+        if(tree -> left != nullptr) {
             text_result += DumpTree(tree->left);
         }
         else{
@@ -46,7 +46,7 @@ namespace datastructures{
         }
         text_result += " ";
 
-        if(tree -> right != NULL){
+        if(tree -> right != nullptr){
             text_result += DumpTree(tree->right);
         }
         else {
